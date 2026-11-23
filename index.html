@@ -11,12 +11,29 @@
       <h1>Sign Up</h1>
       <form action="/signup" method="post">
         <label for="signupUsernameInput">Username</label>
-        <input type="text" name="username" id="signupUsernameInput" />
+        <input
+          type="text"
+          autocomplete="username"
+          name="username"
+          id="signupUsernameInput"
+          required
+        />
         <label for="signUpBirthDateInput">Date of birth</label>
-        <input type="date" name="birthdate" id="signUpBirthDateInput" />
+        <input
+          type="date"
+          name="birthdate"
+          id="signUpBirthDateInput"
+          required
+        />
         <label for="signupEmailInput">Email address</label>
-        <input type="email" name="email" id="signupEmailInput" />
-        <div>
+        <input
+          type="email"
+          autocomplete="email"
+          name="email"
+          id="signupEmailInput"
+          required
+        />
+        <fieldset>
           <legend>Please select your closest region:</legend>
           <div>
             <input
@@ -24,6 +41,7 @@
               name="region"
               id="signupRegionInputAmerica"
               value="America"
+              required
             />
             <label for="signupRegionInputAmerica">America</label>
           </div>
@@ -33,17 +51,24 @@
               name="region"
               id="signupRegionInputEurope"
               value="Europe"
+              required
             />
             <label for="signupRegionInputEurope">Europe</label>
           </div>
-        </div>
+        </fieldset>
         <label for="signupPasswordInput">Password</label>
-        <input type="password" name="password" id="signupPasswordInput" />
+        <input
+          type="password"
+          name="password"
+          id="signupPasswordInput"
+          required
+        />
         <div>
           <input
             type="checkbox"
             name="terms-of-service"
             id="signupTermsOfService"
+            required
           />
           <label for="signupTermsOfService"
             >I accept the terms of service
