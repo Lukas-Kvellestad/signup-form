@@ -16,31 +16,41 @@
         <input type="date" name="birthdate" id="signUpBirthDateInput" />
         <label for="signupEmailInput">Email address</label>
         <input type="email" name="email" id="signupEmailInput" />
-        <label for="signupRegionInput">Region</label>
         <div>
-          <input
-            type="radio"
-            name="region"
-            id="signupRegionInputAmerica"
-            value="America"
-          />
-          <label for="signupRegionInputAmerica">America</label>
+          <legend>Please select your closest region:</legend>
+          <div>
+            <input
+              type="radio"
+              name="region"
+              id="signupRegionInputAmerica"
+              value="America"
+            />
+            <label for="signupRegionInputAmerica">America</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="region"
+              id="signupRegionInputEurope"
+              value="Europe"
+            />
+            <label for="signupRegionInputEurope">Europe</label>
+          </div>
         </div>
-        <div>
-          <input
-            type="radio"
-            name="region"
-            id="signupRegionInputEurope"
-            value="Europe"
-          />
-          <label for="signupRegionInputEurope">Europe</label>
-        </div>
+        <label for="signupPasswordInput">Password</label>
         <input type="password" name="password" id="signupPasswordInput" />
-        <input
-          type="checkbox"
-          name="terms-of-service"
-          id="signupTermsOfService"
-        />
+        <div>
+          <input
+            type="checkbox"
+            name="terms-of-service"
+            id="signupTermsOfService"
+          />
+          <label for="signupTermsOfService"
+            >I accept the terms of service
+            <a href="/page/terms-of-service">Terms of Service</a></label
+          >
+        </div>
+        <button type="submit" id="signupSubmitBtn">Sign up</button>
       </form>
     </main>
   </body>
