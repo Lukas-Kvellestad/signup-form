@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="Description" content="..." />
+    <meta
+      name="Description"
+      content="Sign in to use the server hosting service."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up - server hoster</title>
   </head>
@@ -21,6 +24,7 @@
         <label for="signUpBirthDateInput">Date of birth</label>
         <input
           type="date"
+          autocomplete="bday"
           name="birthdate"
           id="signUpBirthDateInput"
           required
@@ -59,6 +63,7 @@
         <label for="signupPasswordInput">Password</label>
         <input
           type="password"
+          autocomplete="new-password"
           name="password"
           id="signupPasswordInput"
           required
